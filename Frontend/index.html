@@ -1,70 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">  <!-- a character encoding standard that's used to represent text on the internet.-->
-        
-        <meta name="author" content="Arindam Das">
-        <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML">
+<head>
+    <meta charset="UTF-8"> <!-- a character encoding standard that's used to represent text on the internet.-->
 
-        <title> My frist Page</title>
+    <meta name="author" content="Arindam Das">
+    <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML">
 
-        <link rel="stylesheet" href="html5.png" type="image/x-icon">
-        <link rel="stylesheet" href="main.css" type="text/css">
+    <title> My frist Page</title>
 
-    </head>
+    <link rel="stylesheet" href="html5.png" type="image/x-icon"> <!-- This is a good example of relative link -->
+    <link rel="stylesheet" href="main.css" type="text/css"> <!-- This is a good example of relative link -->
 
-    <body>
-        <h1>Hello world</h1>
+</head>
 
-        <hr>
-        
+<body>
+    <h1>My goal for the year</h1>
+
+    <hr>
+
+    <nav>
+        <ul>
+            <li> <a href="#html"> learning HTML</a></li> <!-- This is a good example of internal link -->
+            <li><a href="#vacation"> Vacation Plans</a></li> <!-- This is a good example of internal link -->
+        </ul>
+    </nav>
+
+    <hr>
+    <section id="html">
         <h2>I'm Ready to Learn HTML</h2>
         <p>This is my first webpage</p>
+        <figure>
+            <img src="/My-Learning/Frontend/Img/html_logo_300x300.png" alt="HTML LOGO" title="I am learning HTML 5."
+                width="300" height="300">
+            <figcaption>An Example of HTML5 Code</figcaption>
+        </figure>
+
+        <p>
+            <code> &lt;h1&gt;Hello world&lt;h1&gt; </code>
+        </p>
 
         <h3>My daily Schedule</h3>
         <p>Let me tell you how: </p>
         <ol>
-          <li>...I learn more about web dev.</li>
+            <li>...I learn more about web dev.</li>
             <li>...I plan out my schedule.</li>
-           <li>...I use resources from <abbr title="Mozilla Developer Network"> MDN</abbr>.</li>
+            <li>...I use resources from <abbr title="Mozilla Developer Network">
+                    <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a></abbr>.</li>
+            <!-- This is a good example of absolute link -->
         </ol>
-        
-        <hr>
 
+    </section>
+
+    <hr>
+    <section id="vacation">
         <h2>I Am Also Planning a Vacation</h2>
         <p>I've been working hard and <em>really need a getaway</em></p>
 
         <p>I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.</p>
 
         <h3>Place I'd Like to Visit</h3>
-    <ul>
-        <li><p>I've heard good things about the Caribbean</p></li>
-        <li><p>I've heard good things about the Caribbean.</p></li>
+        <ul>
+            <li>
+                <p>I've heard good things about the Caribbean</p>
+            </li>
+            <li>
+                <p>I've heard good things about the Caribbean.</p>
+                <figure>
+                    <img src="/My-Learning/Frontend/Img/caribbean.jpg" alt="Caribbean beach"
+                        title="I want to visit a caribbean beach" width="400" height="225" loading="lazy">
+                    <!-- using lazy value for img will load until we scroll -->
+                    <figcaption>
+                        Caribbean beach getaway
+                    </figcaption>
+                </figure>
 
-        <li><address>
-            Margaritaville Island Reserve Riviera Cancún<br>
-            Bahia Petempich Puerto Morelos, Mexico<br>
-            Colonia Morelos, México 77580
-        </address></li>
+            </li>
 
-    </ul>
+            <li>
+                <address>
+                    Margaritaville Island Reserve Riviera Cancún<br>
+                    Bahia Petempich Puerto Morelos, Mexico<br>
+                    Colonia Morelos, México 77580
+                </address>
+                <figure>
+                    <img src="/My-Learning/Frontend/Img/vacation.jpg" alt="cancun Vacation"
+                        title="It's 5 o'clock somewhere!" width="400" height="267" loading="lazy">
+                    <figcaption>A Caribbean Vacation Image</figcaption>
+                </figure>
+            </li>
+
+        </ul>
 
         <!-- TODO: Add more places -->
-        <h3>Place I Want to Avoid</h3>
+        <h3>Places I Want to Avoid</h3>
         <dl>
             <dt>North Pole</dt>
-                <dd>I hear this is <strong> Cold</strong>!</dd>
-            <dt>South Pole</dt>
-                <dd>This is also cold.</dd>
-            <dt>Mountain Tops</dt>
-                <dd>These are also cold.</dd>
-        </dl>
-        
-        <hr>
+            <dd>I hear this is <strong> Cold</strong>!</dd>
 
-        &lt; &lt; &lt; &copy; Arindam Das &gt; &gt; &gt;
-        
-    </body>
+
+
+            <dt>South Pole</dt>
+            <dd>This is also cold.</dd>
+            <dt>Mountain Tops</dt>
+            <dd>These are also cold.</dd>
+        </dl>
+    </section>
+
+    <hr>
+
+    <p>&lt; &lt; &lt; &copy; <a href="aboutme.html">Arindam Das</a> &gt; &gt; &gt;</p>
+    <!-- This is a good example of relative link -->
+    <p><a href="#">Back to Top</a></p> <!-- using # we are refering to home or the top of the page -->
+
+</body>
 
 </html>

@@ -15,104 +15,134 @@
 </head>
 
 <body>
-    <h1>My goal for the year</h1>
+    <header>
+        <h1>My goal for the year</h1>
 
-    <hr>
+        <nav aria-label="primary-navigation"><!-- using aria-label used for lebeling the nav section -->
+            <!-- 
+            <nav aria-labeledby="primary-navigation"> used when we have a h2 with id.
+           
+            <h2 id="primary-navigation"></h2>  if we have h2 under the nav then we can lebel this and ref the lebel to nav -->
 
-    <nav>
-        <ul>
-            <li> <a href="#html"> learning HTML</a></li> <!-- This is a good example of internal link -->
-            <li><a href="#vacation"> Vacation Plans</a></li> <!-- This is a good example of internal link -->
-        </ul>
-    </nav>
+            <ul>
+                <li> <a href="#html"> learning HTML</a></li> <!-- This is a good example of internal link -->
+                <li><a href="#vacation"> Vacation Plans</a></li> <!-- This is a good example of internal link -->
+            </ul>
+        </nav>
 
-    <hr>
-    <section id="html">
-        <h2>I'm Ready to Learn HTML</h2>
-        <p>This is my first webpage</p>
-        <figure>
-            <img src="/My-Learning/Frontend/Img/html_logo_300x300.png" alt="HTML LOGO" title="I am learning HTML 5."
-                width="300" height="300">
-            <figcaption>An Example of HTML5 Code</figcaption>
-        </figure>
+        <hr>
+    </header>
 
-        <p>
-            <code> &lt;h1&gt;Hello world&lt;h1&gt; </code>
-        </p>
-
-        <h3>My daily Schedule</h3>
-        <p>Let me tell you how: </p>
-        <ol>
-            <li>...I learn more about web dev.</li>
-            <li>...I plan out my schedule.</li>
-            <li>...I use resources from <abbr title="Mozilla Developer Network">
-                    <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a></abbr>.</li>
-            <!-- This is a good example of absolute link -->
-        </ol>
-
-    </section>
-
-    <hr>
-    <section id="vacation">
-        <h2>I Am Also Planning a Vacation</h2>
-        <p>I've been working hard and <em>really need a getaway</em></p>
-
-        <p>I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.</p>
-
-        <h3>Place I'd Like to Visit</h3>
-        <ul>
-            <li>
-                <p>I've heard good things about the Caribbean</p>
-            </li>
-            <li>
-                <p>I've heard good things about the Caribbean.</p>
+    <main>
+        <article id="html">
+            <h2>I'm Ready to Learn HTML</h2>
+            <p>This is my first webpage</p>
+            <section>
+                <h3>HTML5</h3>
                 <figure>
-                    <img src="/My-Learning/Frontend/Img/caribbean.jpg" alt="Caribbean beach"
-                        title="I want to visit a caribbean beach" width="400" height="225" loading="lazy">
-                    <!-- using lazy value for img will load until we scroll -->
-                    <figcaption>
-                        Caribbean beach getaway
-                    </figcaption>
+                    <img src="/My-Learning/Frontend/Img/html_logo_300x300.png" alt="HTML LOGO"
+                        title="I am learning HTML 5." width="300" height="300">
+                    <figcaption>An Example of HTML5 Code</figcaption>
                 </figure>
-
-            </li>
-
-            <li>
-                <address>
-                    Margaritaville Island Reserve Riviera Cancún<br>
-                    Bahia Petempich Puerto Morelos, Mexico<br>
-                    Colonia Morelos, México 77580
-                </address>
-                <figure>
-                    <img src="/My-Learning/Frontend/Img/vacation.jpg" alt="cancun Vacation"
-                        title="It's 5 o'clock somewhere!" width="400" height="267" loading="lazy">
-                    <figcaption>A Caribbean Vacation Image</figcaption>
-                </figure>
-            </li>
-
-        </ul>
-
-        <!-- TODO: Add more places -->
-        <h3>Places I Want to Avoid</h3>
-        <dl>
-            <dt>North Pole</dt>
-            <dd>I hear this is <strong> Cold</strong>!</dd>
+                <p>
+                    <code> &lt;h1&gt;Hello world&lt;h1&gt; </code>
+                </p>
+            </section>
 
 
+            <section>
+                <h3>My daily Schedule</h3>
+                <p>Let me tell you how: </p>
+                <ol>
+                    <li>...I learn more about web dev.</li>
+                    <li>...I plan out my schedule.</li>
+                    <li>...I use resources from <abbr title="Mozilla Developer Network">
+                            <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a></abbr>.</li>
+                    <!-- This is a good example of absolute link -->
+                </ol>
+                <aside>
+                    <details>
+                        <summary>
+                            Guess the <mark>number of hours</mark> I code per day
+                        </summary>
+                        <p>
+                            I start coding at <time datetime="07:00">7</time> am and I write code for <time
+                                datetime="PT3H">3 hours</time> every morning.
+                        </p>
+                    </details>
+                </aside>
+            </section>
 
-            <dt>South Pole</dt>
-            <dd>This is also cold.</dd>
-            <dt>Mountain Tops</dt>
-            <dd>These are also cold.</dd>
-        </dl>
-    </section>
+        </article>
+
+        <hr>
+        <article id="vacation">
+            <h2>I Am Also Planning a Vacation</h2>
+            <p>I've been working hard and <em>really need a getaway</em></p>
+
+            <p>I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.</p>
+
+            <section>
+                <h3>Place I'd Like to Visit</h3>
+                <ul>
+                    <li>
+                        <p>I've heard good things about the Caribbean</p>
+                    </li>
+                    <li>
+                        <p>I've heard good things about the Caribbean.</p>
+                        <figure>
+                            <img src="/My-Learning/Frontend/Img/caribbean.jpg" alt="Caribbean beach"
+                                title="I want to visit a caribbean beach" width="400" height="225" loading="lazy">
+                            <!-- using lazy value for img will load until we scroll -->
+                            <figcaption>
+                                Caribbean beach getaway
+                            </figcaption>
+                        </figure>
+
+                    </li>
+
+                    <li>
+                        <address>
+                            Margaritaville Island Reserve Riviera Cancún<br>
+                            Bahia Petempich Puerto Morelos, Mexico<br>
+                            Colonia Morelos, México 77580
+                        </address>
+                        <figure>
+                            <img src="/My-Learning/Frontend/Img/vacation.jpg" alt="cancun Vacation"
+                                title="It's 5 o'clock somewhere!" width="400" height="267" loading="lazy">
+                            <figcaption>A Caribbean Vacation Image</figcaption>
+                        </figure>
+                    </li>
+
+                </ul>
+            </section>
+
+            <section>
+
+                <!-- TODO: Add more places -->
+                 
+                <h3>Places I Want to Avoid</h3>
+                <dl>
+                    <dt>North Pole</dt>
+                    <dd>I hear this is <strong> Cold</strong>!</dd>
+
+
+
+                    <dt>South Pole</dt>
+                    <dd>This is also cold.</dd>
+                    <dt>Mountain Tops</dt>
+                    <dd>These are also cold.</dd>
+                </dl>
+            </section>
+        </article>
+    </main>
 
     <hr>
-
-    <p>&lt; &lt; &lt; &copy; <a href="aboutme.html">Arindam Das</a> &gt; &gt; &gt;</p>
-    <!-- This is a good example of relative link -->
-    <p><a href="#">Back to Top</a></p> <!-- using # we are refering to home or the top of the page -->
-
+    <footer>
+        <p>&lt; &lt; &lt; &copy; <a href="aboutme.html">Arindam Das</a> &gt; &gt; &gt;</p>
+        <!-- This is a good example of relative link -->
+        <p><a href="#">Back to Top</a></p> <!-- using # we are refering to home or the top of the page -->
+    </footer>
 </body>
 
 </html>
